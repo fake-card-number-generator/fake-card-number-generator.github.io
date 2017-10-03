@@ -1,1 +1,3 @@
-export const FILTER = 'FILTER';
+export const GENERATE = 'GENERATE';
+export const ACTIVATE_COPY_FLASH = 'ACTIVATE_COPY_FLASH';
+export const DEACTIVATE_COPY_FLASH = 'DEACTIVATE_COPY_FLASH';

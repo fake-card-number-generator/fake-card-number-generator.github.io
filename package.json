@@ -1,7 +1,7 @@
 {
   "name": "webpack-react-redux",
   "version": "1.0.0",
-  "description": "A boilerplate for playing around with react, redux and react-router with the help of webpack.",
+  "description": "Test credit card number generator.",
   "main": "index.js",
   "scripts": {
     "test": "",
@@ -14,9 +14,11 @@
     "react",
     "redux"
   ],
-  "author": "Jean-Pierre Sierens",
+  "author": "Andrei Dotsenko",
   "license": "MIT",
   "dependencies": {
+    "classnames": "^2.2.5",
+    "creditcard-generator": "github:fiberthrone/credit-card-generator",
     "file-loader": "^0.9.0",
     "prop-types": "^15.5.9",
     "react": "^15.0.2",

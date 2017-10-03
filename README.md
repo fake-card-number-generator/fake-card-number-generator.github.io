@@ -18,7 +18,7 @@ The app updates without the browser having to reload. You don't lose state!
 ## Build the app
 ```npm run build```
 
-This will build the app into the "docs" directory in the root of the project. It contains the index.html along with the minified assets, ready for production.
+This will build the app into the root directory in the root of the project. It contains the index.html along with the minified assets, ready for production.
 
 ## Credits
 

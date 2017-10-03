@@ -1,4 +1,7 @@
-docs
+index.html
+*.min.js
+*.min.css
+webpack.stats.json
 node_modules
 coverage
 webpack.*.js

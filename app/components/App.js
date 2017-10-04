@@ -5,7 +5,7 @@ import FlashPortal from './FlashPortal';
 import { copyTextToClipboard } from '../utils';
 
 // https://regex101.com/r/KErMIP/1
-const formatCardNumber = number => number.replace(/(?=(?!^)(?:\d{4})+$)/g, ' ');
+const formatCardNumber = number => number.replace(/(?=(?!^)(?:\d{4})+$)/g, '\xa0');
 
 // https://stackoverflow.com/a/33547949
 const cardClick = e => {
@@ -41,11 +41,13 @@ class App extends Component {
         return (
             <div className={css.container}>
                 <p className={css.cardNumber} onClick={cardClick}>{formatCardNumber(number)}</p>
-                <div className={css.copyBlock}>
-                    <a onClick={this.copyClick} className={css.copyButton}>Copy</a>
-                    <FlashPortal trigger={flashTrigger} />
+                <div className={css.controls}>
+                    <div className={css.copyBlock}>
+                        <a onClick={this.copyClick} className={css.copyButton}>Copy</a>
+                        <FlashPortal trigger={flashTrigger} />
+                    </div>
+                    <a onClick={onGenerateClick} className={css.generateButton}>Generate another one</a>
                 </div>
-                <a onClick={onGenerateClick} className={css.generateButton}>Generate another one</a>
             </div>
         );
     }

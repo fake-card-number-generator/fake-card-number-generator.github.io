@@ -1,25 +1,14 @@
 import { connect } from 'react-redux';
-import { generate, activateCopyFlash, deactivateCopyFlash } from '../actions';
+import { generate } from '../actions';
 import App from '../components/App';
-import { copyTextToClipboard } from '../utils';
 
-const mapStateToProps = (state) => {
-    return {
-        number: state.number,
-        copyFlash: state.copyFlash
-    };
-};
+const mapStateToProps = (state) => ({
+    number: state.number,
+});
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        onCopyClick: (number) => {
-            copyTextToClipboard(number);
-            dispatch(activateCopyFlash());
-            setTimeout(() => dispatch(deactivateCopyFlash()), 600);
-        },
-        onGenerateClick: () => dispatch(generate()),
-    };
-};
+const mapDispatchToProps = (dispatch) => ({
+    onGenerateClick: () => dispatch(generate()),
+});
 
 export default connect(
     mapStateToProps,

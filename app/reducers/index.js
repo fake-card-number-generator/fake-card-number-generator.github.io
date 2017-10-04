@@ -12,20 +12,8 @@ const number = (state = generateCardNumber(), action) => {
     }
 };
 
-const copyFlash = (state = false, action) => {
-    switch (action.type) {
-        case types.ACTIVATE_COPY_FLASH:
-            return true;
-        case types.DEACTIVATE_COPY_FLASH:
-            return false;
-        default:
-            return state;
-    }
-};
-
 const rootReducer = combineReducers({
     number,
-    copyFlash,
     routing
 });
 

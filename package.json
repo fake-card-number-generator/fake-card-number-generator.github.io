@@ -20,6 +20,7 @@
     "classnames": "^2.2.5",
     "creditcard-generator": "github:fiberthrone/credit-card-generator",
     "file-loader": "^0.9.0",
+    "immutable": "^3.8.2",
     "prop-types": "^15.5.9",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",

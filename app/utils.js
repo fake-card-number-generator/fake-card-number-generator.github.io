@@ -52,5 +52,5 @@ export function copyTextToClipboard(text) {
 }
 
 export function generateCardNumber() {
-    return generator.GenCC('Test')[0];
+    return generator.GenCC('NewTest')[0];
 }
